@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color:#fceceb;
+}
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.container-fluid {
+    border-radius: 10px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+nav {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #A8E8FF, white);
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    background: linear-gradient(to bottom right, #606d96, #9eb5ff);
+    padding: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-light {
+    border-radius: 70px;
+    background: linear-gradient(to bottom right, #A8E8FF, white);
+    border: 0px solid black;
+}
+.jumbotron {
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.35)
+          ), url("rule.jpeg");
+            background-position: center;
+            background-size: cover;
+            
+            
+        }
+@media screen and (min-width: 1000px) {
+    .display-4 {
+        width: 95%;
+        margin-right: auto;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .lead {
+        width: 65%;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .lead {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .display-4 {
+        font-size: 41px;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+}
+.contact1 {
+    width: 35px;
+    higher: 35px;
+}
+@media screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row-reverse;
+        align-items:center;
+    }
+    .link-contact {
+        margin-right:20px;
+        margin-top:15px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header {
+        display: flex;
+        
+        flex-direction:column-reverse;
+        align-items:center;
+    }
+    .link-contact {
+        margin-left:20px;
+        margin-bottom:20px;
+    }
+}
+#phone {
+    font-size:18px;
+    color:black;
+    transition: color 0.5s ease-in;
+}
+
+#phone:hover {
+    color:black;
+}
+.big_img {
+    width: 10%;
+    higher: 10%;
+    margin-right:10px;
+    margin-bottom:8px;
+}
+.small_img {
+    width: 5%;
+    higher: 5%;
+    margin-right:15px;
+    margin-bottom:8px;
+}
+.img1 {
+    margin-left:20px;
+}
+.rule {
+    font-size:18px;
+}

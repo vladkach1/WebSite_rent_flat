@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style_rule.css" />
+    <title>Аренда квартир</title>
+  </head>
+  <body>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <!--самая верхушка-->
+      <header class="container">
+          <div class="row">
+          <a href="https://t.me/ani777777" class="link-contact" target="_blank"><img class="contact1" src="telegram.svg"></a>
+          <a href="https://wa.me/79061868978" class="link-contact" target="_blank"><img class="contact1" src="whatsapp.svg"></a>
+          <a href="tel:+79061868978" class="link-contact">
+              <img class="contact1" id="phone1" src="phone.svg">
+              <p id="phone">+79061868978</p>
+              <script>
+                  const phone = document.getElementById('phone');
+                  const phone1 = document.getElementById('phone1');
+                  function updateGreeting() {
+                      if (window.innerWidth > 1000) {
+                          phone.style.display = "block";
+                          phone1.style.display = "none"
+                      } else {
+                          phone1.style.display = "block";
+                          phone.style.display = "none";
+                      }
+                  }
+                  
+                  // Вызвать функцию при загрузке страницы
+                  window.onload = updateGreeting;
+                  
+                  // Вызвать функцию при изменении размера окна
+                  window.addEventListener('resize', updateGreeting);
+              </script>
+          </a>
+          </div>
+                            <h1 class="logo">Аренда квартир в Ростове-на-Дону</h1>
+      </header>
+                
+      
+      <!--навигационная панель-->
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Главная</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Апартаменты
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="KV1.html">Романтик</a>
+                          <a class="dropdown-item" href="KV2.html">Венеция</a>
+                          <a class="dropdown-item" href="KV3.html">Париж</a>
+                          <a class="dropdown-item" href="KV4.html">Молодёжная</a>
+                          <a class="dropdown-item" href="KV5.html">Венера</a>
+                        </div>
+                      </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Правила</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="comment.html">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+
+      <!--джамборд-->
+      <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                  <h1 class="display-4">Правила проживания</h1>
+                  <p class="lead">
+                  <ul class="rule">
+                  <li>Заселение только при наличии паспорта и оплаты за проживание и возвратного залога от 2000 рублей.</li>
+                  <li>Цена за сутки может зависеть от количества людей.</li>
+                  <li>В выходные и праздничные дни тариф повышен.</li>
+                  <li>Для командировочных предоставляются отчетные документы.</li>
+                  </ul>
+                  <ol class="rule">
+                  <li>Расчетное время 11:00, не зависимо от времени заселения.</li>
+                  <li>При необходимости продление согласовывается заране.<br>
+                  Продление времени осуществляется по следующим расценкам:<br>
+                  до 15:00 - 1500-2000 руб (в зависимости от квартиры)<br>
+                  до 18:00 - 2500-3500 руб (в зависимости от квартиры)<br>
+                  после 18:00 - оплата за полные сутки<br>
+                  Доплата за гостя 1000 руб - 1 человек (обговаривается заранее)</li>
+                  <li>Курение в квартире запрещено! Установлена противопожарная сигнализация (рабочая), моментально включается сирена на весь дом, что влечет за собой выселение гостей без возврата залога и оплаты за проживание и не малый штраф от пожарной инспекции. Курение возможно на открытой части балкона, не выбрасывая окурки на улицу.</li>
+                  <li>При порче, краже, утрате имущества гость обязан возместить 100% ущерба!</li>
+                  <li>При нарушении правопорядка, нарушении тишины после 23:00, проживание большего количества людей чем заявлено, проживание с животными если о них не оговорено, нахождение в квартире в пьяном и наркотическом опьянении гости выселяются из квартиры незамедлительно, без возврата оплаты залога и оплаты за проживание.</li>
+                  <li>⁠⁠По всем вопросам и форс-мажору обращайтесь по телефону +7906-186-89-78
+                  </ol>
+                  </p>
+              </div>
+          </div>
+          <!--нижняя панель-->
+          <footer class="container-fluid bg-light py-3">
+              <div class="row">
+                  <div class="col-md-6 text-center">
+                      <p>© 2023 Аренда квартир. Все права защищены.</p>
+                  </div>
+
+              </div>
+          </footer>
+          
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
