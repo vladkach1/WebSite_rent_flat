@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поиск и бронирование квартир — Аренда квартир в Ростове-на-Дону</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .rc-page { max-width: 1120px; margin: 0 auto; padding: 28px 16px 56px; }
+    .rc-panel { background: #fff; border-radius: 16px; padding: clamp(18px, 3vw, 32px); box-shadow: 0 4px 20px rgba(24, 42, 70, .08); }
+    .rc-intro { max-width: 760px; margin-bottom: 24px; }
+    .rc-back { display: inline-block; margin-bottom: 18px; }
+    #hr-widget { min-height: 120px; }
+  </style>
+</head>
+<body>
+  <main class="rc-page">
+    <a class="rc-back" href="index.html">&larr; На главную</a>
+    <div class="rc-intro">
+      <h1>Найти квартиру</h1>
+      <p>Выберите даты проживания и параметры поиска. Доступность и оформление бронирования предоставляются через RealtyCalendar.</p>
+    </div>
+    <section class="rc-panel" aria-label="Поиск квартиры">
+      <div id="hr-widget"></div>
+    </section>
+    <p class="text-muted mt-3 small">Если виджет не загрузился, обновите страницу или свяжитесь с нами по телефону, указанному на главной странице.</p>
+  </main>
+  <script type="module" src="https://homereserve.ru/widget.js"></script>
+  <script type="module">
+    window.homereserve.initWidgetSearch({"token":"l8UdTAWoJO"});
+  </script>
+</body>
+</html>
